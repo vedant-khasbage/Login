@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../1ST Login"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "2nd LOGIN"
+	}
+}

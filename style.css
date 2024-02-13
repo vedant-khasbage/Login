@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Poppins:wght@100;400&family=Roboto&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     height: 100%;
+    width: 100%; 
+    background-image: url('leartes-studios-03.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: anima 5s linear infinite;
+} 
+@keyframes anima{
+    100%{
+        filter:hue-rotate(360deg)
+    }
+}
+.Wrapper{
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter:blur(20px);
+    height: 400px;
+    width: 450px;
+    background-color: transparent;
+    justify-content: center;
+/* text-align: center; */
+display: flex;
+border-radius: 40px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.int{
+    position: relative;
+    width: 300px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+.int label{
+ position: absolute;
+ left: 5px;
+ top: 50%;
+ transform: translateY(-50%);
+ font-size: 1em;
+ color: white;
+ pointer-events: none;
+ transition: .4s;
+
+}
+.int input{
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+
+    padding: 0 35px 0 5px;
+}
+.int input:focus~label,
+.int input:valid~label{
+    top:-5px;
+}
+
+.int i{
+    position:absolute;
+    top: 50%;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    /* padding: px; */
+}
+.remember{
+    /* margin: 20px; */
+display: flex;
+justify-content: space-between;
+position: relative;
+bottom: 16px;
+color: #fff;
+}
+.remember a{
+    text-decoration: none;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+.btn button{
+width: 100%;
+height: 40px;
+font-size: 15px;
+border-radius: 20px;
+border: none;
+cursor: pointer;
+}
+.account{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: relative;
+    margin: 20px;
+    color: white;
+}
+.account a{
+    text-decoration: none;
+}
+
+.account a:hover{
+    text-decoration: underline;
+}
+@media (max-width:360px) {
+    .Wrapper{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: none;
+    }
+}
